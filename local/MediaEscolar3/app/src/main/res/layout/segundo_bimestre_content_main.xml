@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mediaescolar.ronei.com.mediaescolar.SegundoBimestreActivity"
+    tools:showIn="@layout/segundo_bimestre_activity_main">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Média Escolar" />
+
+    <TextView
+        android:id="@+id/txtBimestre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="2º Bimestre" />
+
+    <TextView
+        android:id="@+id/txtNotaProva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtBimestre"
+        android:layout_below="@+id/txtBimestre"
+        android:layout_marginTop="30dp"
+        android:text="Nota da Prova" />
+
+    <TextView
+        android:id="@+id/txtMateira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editMateria"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:text="Matéria           " />
+
+    <TextView
+        android:id="@+id/txtNotaTrabalho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNotaProva"
+        android:layout_alignBottom="@+id/txtNotaProva"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:text="Nota do Trabalho" />
+
+    <EditText
+        android:id="@+id/editMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtMateira"
+        android:layout_alignStart="@+id/txtMateira"
+        android:layout_below="@+id/txtNotaProva"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editNotaProva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtNotaProva"
+        android:layout_alignStart="@+id/txtNotaProva"
+        android:layout_alignTop="@+id/editMateria"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editNotaTrabalho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtNotaTrabalho"
+        android:layout_alignStart="@+id/txtNotaTrabalho"
+        android:layout_alignTop="@+id/editNotaProva"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/txtMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editMateria"
+        android:layout_below="@+id/editMateria"
+        android:layout_marginTop="70dp"
+        android:text="Média" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtMedia"
+        android:layout_below="@+id/txtMedia"
+        android:layout_marginTop="31dp"
+        android:text="(Média)" />
+
+    <TextView
+        android:id="@+id/txtSituacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editNotaProva"
+        android:layout_alignTop="@+id/txtMedia"
+        android:text="Situação" />
+
+    <TextView
+        android:id="@+id/txtSituacaoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtResultado"
+        android:layout_alignEnd="@+id/txtSituacao"
+        android:text="(Situação)" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtResultado"
+        android:layout_marginBottom="36dp"
+        android:text="Calcular" />
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="teste.variaveis.com.variveisemstingxml.PrincipalActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/txtInsiraReais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Insira o Valor em Reais"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/inReais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inReais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="Valore em Reais"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtValorConvertidoDolar"
+        app:layout_constraintEnd_toEndOf="@+id/txtInsiraReais"
+        app:layout_constraintTop_toBottomOf="@+id/txtInsiraReais" />
+
+    <TextView
+        android:id="@+id/txtValorConvertidoDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="14dp"
+        android:text="Valor em Dólares"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDolarSymbol"
+        app:layout_constraintStart_toStartOf="@+id/txtDolarSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/inReais" />
+
+    <TextView
+        android:id="@+id/txtDolarSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="115dp"
+        android:text="US$ "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtValorConvertidoEuro"
+        app:layout_constraintEnd_toStartOf="@+id/txtExibeDolar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorConvertidoDolar" />
+
+    <TextView
+        android:id="@+id/txtExibeDolar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="114dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDolarSymbol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtDolarSymbol" />
+
+    <TextView
+        android:id="@+id/txtValorConvertidoEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="3dp"
+        android:text="Valor em Euros"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEuroSymbol"
+        app:layout_constraintStart_toStartOf="@+id/txtEuroSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/txtDolarSymbol" />
+
+    <TextView
+        android:id="@+id/txtEuroSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="129dp"
+        android:text="€ "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConverter"
+        app:layout_constraintEnd_toStartOf="@+id/txtExibeEuro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorConvertidoEuro" />
+
+    <TextView
+        android:id="@+id/txtExibeEuro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="114dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtEuroSymbol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtEuroSymbol" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginStart="65dp"
+        android:text="Converter"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEuroSymbol" />
+
+</android.support.constraint.ConstraintLayout>

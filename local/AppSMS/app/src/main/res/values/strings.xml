@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Enviar SMS</string>
+    <string name="dados_para_enviar">Dados para Enviar</string>
+    <string name="para">Para</string>
+</resources>

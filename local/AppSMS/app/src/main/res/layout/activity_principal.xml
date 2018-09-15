@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+tools:context="roneicarlos.com.appsms.Principal">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dados_para_enviar"
+        android:textColor="@android:color/black"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/editSMSPara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/para"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editSMSMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mensagem"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar SMS" />
+
+</LinearLayout>
